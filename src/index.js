@@ -21,8 +21,5 @@ function showInfo(country){
 
 console.log(countryFirst.showCountry());
 showInfo(countryFirst);
-
-console.log("----------------");
-
 console.log(countrySecond.showCountry());
 showInfo(countrySecond);
