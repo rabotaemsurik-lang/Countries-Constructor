@@ -1,4 +1,4 @@
-function countryConstructor(title, capital, population, area){
+function Country(title, capital, population, area){
     this.title = title;
     this.capital = capital;
     this.population = population;
@@ -7,8 +7,8 @@ function countryConstructor(title, capital, population, area){
         return `Країна: ${this.title}, столиця: ${this.capital}, населення: ${this.population}, area: ${this.area}`;
     }
 }
-const countryFirst = new countryConstructor("Україна", "Київ", 35000000, 603700);
-const countrySecond = new countryConstructor("Франція", "Париж", 66700000, 643801);
+const countryFirst = new Country("Україна", "Київ", 35000000, 603700);
+const countrySecond = new Country("Франція", "Париж", 66700000, 643801);
 function showInfo(country){
     for (let key in country){
         if (typeof country[key] !== "function") {
